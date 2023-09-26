@@ -1,9 +1,9 @@
 :root, :before, :after{
   --bg-2:#FFFFFF;
-  --color-default-1:#A8AABC; 
+  --color-default-1:#434655; 
   --color-default-2:#4663AC;
   --color-default-3:#A84554; 
-  --color-default-4:#434655;
+  --color-default-4:#A8AABC;
   --color-border:#E0E0E0;
   --color-border-dark:0 0 0;
   --color-border-light:255 255 255;
@@ -35,7 +35,12 @@ border-top-left-radius:var(--rounded-1); border-bottom-left-radius:var(--rounded
 
 
 
-.{}
+.formbox-field{background-color:transparent; border-color:var(--color-border); border-radius:var(--rounded-2);}
+.formbox-field::placeholder{color:var(--color-border);}
+.formbox-note{color:var(--color-default-4);}
+
+.formbox-error .formbox-note, .formbox-error .formbox-label{color:var(--color-default-3);}
+.formbox-error .formbox-field{border-color:var(--color-default-3);}
 
 
 

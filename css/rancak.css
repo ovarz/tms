@@ -13,7 +13,7 @@
   --size-6:55px;
   --size-7:89px;
   --default-fontsize:16px;
-  --bg-1:#EBEEF2;
+  --bg-1:#FAFAFA;
 }
 
 
@@ -37,7 +37,11 @@ display:flex; text-align:center; align-items:center; justify-content:center;}
 
 
 
-.{}
+.formbox-row{display:grid; grid-gap:var(--size-1);}
+.formbox-label{font-weight:900;}
+.formbox-input{position:relative;}
+.formbox-field{padding:var(--size-4); border:1px solid; width:100%;}
+.formbox-note{font-size:12px; font-style:italic;}
 
 
 
